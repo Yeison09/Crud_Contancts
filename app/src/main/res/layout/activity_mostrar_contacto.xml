@@ -31,7 +31,6 @@
             android:id="@+id/imageButton"
             android:layout_width="103dp"
             android:layout_height="100dp"
-
             android:layout_marginTop="80dp"
             android:background="@drawable/roundcorner"
             android:padding="45dp"
@@ -49,6 +48,7 @@
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
+
 
         <TextView
             android:id="@+id/apellidoAgenda"
@@ -102,7 +102,6 @@
             android:layout_marginLeft="92dp"
             android:layout_marginTop="-23dp"
             android:text="amandaconocr@gmail.com"
-
             android:textSize="17dp"
             android:textStyle="bold" />
 
@@ -125,7 +124,6 @@
             android:text="Diseñadora Grafica"
             android:textSize="17dp"
             android:textStyle="bold" />
-
 
 
         <androidx.cardview.widget.CardView
@@ -220,65 +218,11 @@
             android:id="@+id/btnEditar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-
             android:layout_marginTop="40dp"
             android:backgroundTint="@color/verdeCirculo"
             android:text="Editar"
             android:textStyle="bold" />
     </LinearLayout>
-
-
-    <!--
-
-
-    <TextView
-        android:id="@+id/NombreAgenda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:elevation="10dp"
-        android:textColor="@color/black"
-        android:layout_marginTop="-260dp"
-        android:text="Amanda Conor"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
-
-
-
-
-
-
-    <LinearLayout
-        android:id="@+id/vista"
-        android:layout_width="420dp"
-        android:layout_height="737dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="160dp"
-            android:layout_weight="1"
-            android:background="@drawable/forma">
-
-
-
-        </View>
-
--->
 
 
 

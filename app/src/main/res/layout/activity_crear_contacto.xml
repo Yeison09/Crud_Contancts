@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".CrearContactoActivity">
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -19,28 +20,26 @@
         app:titleTextColor="@color/white" />
 
 
-
-
         <LinearLayout
-
+            android:id="@+id/general"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
 
 
             <ImageButton
                 android:id="@+id/imageButton"
                 android:layout_width="103dp"
                 android:layout_height="100dp"
-
                 android:layout_marginTop="80dp"
                 android:background="@drawable/roundcorner"
                 android:padding="45dp"
                 android:src="@drawable/ic_baseline_add_a_photo_24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
 
             <EditText
                 android:id="@+id/editTextTextPersonName"
@@ -58,7 +57,6 @@
                 android:paddingBottom="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageButton" />
-
 
 
             <EditText
@@ -97,6 +95,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
+
             <EditText
                 android:id="@+id/editTextTextPersonName4"
                 android:layout_width="wrap_content"
@@ -116,9 +115,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/editTextPhone2" />
 
 
-
-
-
             <EditText
                 android:id="@+id/editTextCorreo"
                 android:layout_width="wrap_content"
@@ -135,6 +131,7 @@
                 android:paddingBottom="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
 
             <EditText
                 android:id="@+id/editTextTextPersonName5"
@@ -157,8 +154,6 @@
                 app:layout_constraintVertical_bias="0.365" />
 
 
-
-
             <Button
                 android:id="@+id/guardar"
                 android:layout_width="wrap_content"
@@ -170,6 +165,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
         </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

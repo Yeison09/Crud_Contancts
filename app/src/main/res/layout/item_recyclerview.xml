@@ -14,8 +14,6 @@
         app:cardCornerRadius="25dp"
         app:cardElevation="12dp">
 
-        <!--android:backgroundTint="@color/black"-->
-
 
         <ImageButton
             android:id="@+id/circulo"
@@ -25,6 +23,7 @@
             android:layout_marginTop="10dp"
             android:backgroundTint="@color/black"
             android:background="@drawable/roundcorner" />
+
 
         <TextView
             android:id="@+id/textIniciales"
@@ -37,8 +36,6 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-
 
 
 
@@ -103,10 +100,6 @@
 
 
     </androidx.cardview.widget.CardView>
-
-
-
-
 
 
 

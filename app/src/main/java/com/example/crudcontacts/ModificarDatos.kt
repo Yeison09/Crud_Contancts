@@ -22,11 +22,12 @@ class ModificarDatos : AppCompatActivity() {
         var nombreModificar = intent.getStringExtra("nombre") ?: "Nombre no encontrado"
         var nombreAgenda = binding.editTextNombreModificar
         val editableNombre: Editable = Editable.Factory.getInstance().newEditable(nombreModificar)
-         nombreAgenda.text = editableNombre
+        nombreAgenda.text = editableNombre
 
         var apellidoModificar = intent.getStringExtra("apellido") ?: "Apellido no encontrado"
         var apellido = binding.editTextApellidoModificar
-        val editableApellido: Editable = Editable.Factory.getInstance().newEditable(apellidoModificar)
+        val editableApellido: Editable =
+            Editable.Factory.getInstance().newEditable(apellidoModificar)
         apellido.text = editableApellido
 
         val numeroModificar = intent.getStringExtra("numero") ?: "Numero no encontrado"
@@ -46,21 +47,33 @@ class ModificarDatos : AppCompatActivity() {
 
 
         binding.btnModifcar.setOnClickListener {
-            if(binding.editTextNombreModificar.text.isNotBlank() && binding.editTextApellidoModificar.text.isNotBlank() && binding.editTextPhoneModificar.text.isNotBlank() && binding.editTextCorreoModificar.text.isNotBlank()){
-                agendaDBHelper.actualizarDato(binding.textIdModificar.text.toString().toInt(), binding.editTextNombreModificar.text.toString(), binding.editTextApellidoModificar.text.toString(), binding.editTextPhoneModificar.text.toString(), binding.editTextCorreoModificar.text.toString() )
+            if (binding.editTextNombreModificar.text.isNotBlank() && binding.editTextApellidoModificar.text.isNotBlank() && binding.editTextPhoneModificar.text.isNotBlank() && binding.editTextCorreoModificar.text.isNotBlank()) {
+                agendaDBHelper.actualizarDato(
+                    binding.textIdModificar.text.toString().toInt(),
+                    binding.editTextNombreModificar.text.toString(),
+                    binding.editTextApellidoModificar.text.toString(),
+                    binding.editTextPhoneModificar.text.toString(),
+                    binding.editTextCorreoModificar.text.toString()
+                )
 
                 binding.editTextNombreModificar.text.clear()
                 binding.editTextApellidoModificar.text.clear()
                 binding.editTextPhoneModificar.text.clear()
                 binding.editTextCorreoModificar.text.clear()
 
-                Toast.makeText(this, "Modificado",
-                    Toast.LENGTH_SHORT).show()
-            }else{
-                Toast.makeText(this,"No se ha podido modificar",
-                    Toast.LENGTH_LONG).show()
+
+                Toast.makeText(
+                    this, "Modificado",
+                    Toast.LENGTH_SHORT
+                ).show()
+            } else {
+                Toast.makeText(
+                    this, "No se ha podido modificar",
+                    Toast.LENGTH_LONG
+                ).show()
 
             }
+
         }
 
 

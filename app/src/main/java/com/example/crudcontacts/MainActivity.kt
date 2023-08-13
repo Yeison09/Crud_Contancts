@@ -16,23 +16,16 @@ import com.example.crudcontacts.databinding.ActivityCrearContactoBinding
 import com.example.crudcontacts.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    //private lateinit var recyclerViewAgenda: RecyclerViewAgenda
+
     private lateinit var binding: ActivityMainBinding
     private lateinit var agendaDBHelper: MiSQLiteHelper
     private lateinit var db: SQLiteDatabase
-
-
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
-
-
 
 
         var toolbar = binding.toolbar
@@ -63,8 +56,7 @@ class MainActivity : AppCompatActivity() {
 
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-       // return super.onCreateOptionsMenu(menu)
-      menuInflater.inflate(R.menu.toolbar_menuprincipal,menu)
+        menuInflater.inflate(R.menu.toolbar_menuprincipal, menu)
         return true
     }
 
@@ -76,7 +68,7 @@ class MainActivity : AppCompatActivity() {
                 true
             }
 
-            R.id.Ajustes ->{
+            R.id.Ajustes -> {
                 val intent = Intent(this, MostrarContactoActivity::class.java)
                 startActivity(intent)
                 true
@@ -84,16 +76,6 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
-
-
-
-
-
-
-
-
-
-
 
 
 }

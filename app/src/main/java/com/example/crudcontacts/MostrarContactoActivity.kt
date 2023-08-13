@@ -33,7 +33,6 @@ class MostrarContactoActivity : AppCompatActivity() {
         val id = intent.getStringExtra("id") ?: "Id no encontrado"
 
 
-
         binding.btnEditar.setOnClickListener {
             val miIntentDos = Intent(this, ModificarDatos::class.java).apply {
                 putExtra("nombre", nombre)
@@ -44,7 +43,6 @@ class MostrarContactoActivity : AppCompatActivity() {
             }
             startActivity(miIntentDos)
         }
-
 
 
     }
